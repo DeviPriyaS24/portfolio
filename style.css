@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+  }
 *
 {
     margin: 0;
@@ -30,6 +33,8 @@ nav ul li a
     color: black;
     font-size: 2ch;
     font-weight: 500;
+    position: sticky;
+    top: 3px;
 }
 nav ul li a:hover
 {
@@ -144,7 +149,7 @@ nav ul li a:hover
 }
 
 
-.scale{
+/* .scale{
     display: grid;
     grid-template-columns: 80% 10% auto;
     width: 80%;
@@ -156,10 +161,122 @@ nav ul li a:hover
     width: 100%;
     height: 5px;
     background-color: rgb(171, 59, 59);
-}
+} */
 
 .skill-div{
-    margin-left: 40px;
     display: grid;
-    grid-template-columns: 500px auto;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    margin-top: 20px;
+    margin-left: 100px;
+    justify-content: space-around;
+    align-items: center;
 }
+
+.bars{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 10px 0px;
+}
+
+.base_bar{
+    bottom: 0;
+    position: absolute;
+    height: 7px;
+    width: 100%;
+    background-color: black;
+    border-radius: 7px;
+}
+
+.html_bar{
+    background-color: orange;
+    width: 89%;
+}
+
+.css_bar{
+    background-color: orange;
+    width: 69%;
+}
+
+.js_bar{
+    background-color: orange;
+    width: 50%;
+}
+
+.react_bar{
+    background-color: orange;
+    width: 72%;
+}
+
+.icon_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.anim{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.brand{
+    color: rgb(0, 0, 0);
+    font-size: 30px; 
+}
+
+.anim:hover{
+    background-image: linear-gradient(to bottom,pink,cyan,yellow);
+    animation: rotate 4s;
+}
+
+@keyframes rotate {
+    0%{transform: rotate(30deg);}
+    20%{transform: rotate(-30deg);}
+    40%{transform: rotate(30deg);}
+    60%{transform: rotate(-30deg);}
+    80%{transform: rotate(30deg);}
+    100%{transform: rotate(-30deg);}
+}
+
+.anim:hover .brand{
+    color:white;
+}
+
+#copy{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.up-arrow{
+    float: right;
+    margin: 0px 30px 30px 0px;
+}
+
+.navi{
+    position: fixed;
+    right: 5px; 
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(227, 226, 226);
+    /* border-radius: 10px; */
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(213, 109, 29);
+    border-radius: 10px;
+  }

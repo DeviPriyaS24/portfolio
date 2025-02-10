@@ -16,17 +16,17 @@
    <!-- navbar -->
     <nav>
         <div><img src="./images/logo.jpeg" alt="" width="100px"></div>
-        <div>
+        <div class="navi">
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Skills</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills-sec">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
     
-    <div class="home">
+    <div class="home" id="homeid">
         <div class="home-content">
             <div class="homehead"><h1>I,m Ana <span>Steel</span></h1></div>
             <p class="para">I am the ceo of anna steel trivarum <br>
@@ -70,14 +70,71 @@
 
             <div class="skill-div">
                 <div class="scale">
-                    <div class="html1"></div>
-                    <div class="html2"></div>
+                    <!-- html -->
+                     <div class="bars">
+                        <h4 style="font-size: 20px; font-weight: 500;">HTML</h4>
+                        <span style="font-size: 20px; font-weight: 500;">89%</span>
+                        <div class="base_bar"></div>
+                        <div class="base_bar html_bar"></div>
+                     </div>
+
+                     <div class="bars">
+                        <h4 style="font-size: 20px; font-weight: 500;">CSS</h4>
+                        <span style="font-size: 20px; font-weight: 500;">69%</span>
+                        <div class="base_bar"></div>
+                        <div class="base_bar css_bar"></div>
+                     </div>
+
+                     <div class="bars">
+                        <h4 style="font-size: 20px; font-weight: 500;">JS</h4>
+                        <span style="font-size: 20px; font-weight: 500;">50%</span>
+                        <div class="base_bar"></div>
+                        <div class="base_bar js_bar"></div>
+                     </div>
+
+                     <div class="bars">
+                        <h4 style="font-size: 20px; font-weight: 500;">REACT</h4>
+                        <span style="font-size: 20px; font-weight: 500;">72%</span>
+                        <div class="base_bar"></div>
+                        <div class="base_bar react_bar"></div>
+                     </div>
                 </div>
                 <div>
                     <img src="./images/lap.jpeg" alt="">
                 </div>
             </div>
         </section>
+
+        <section id="contact">
+            <div class="section-head">
+                <h2 class="abt-h2">Contact</h2>
+                <span class="abt-span">My contacts</span>
+            </div>
+
+            <div class="icon_container">
+                <!-- linkedin -->
+                <div class="anim"><a href="https://www.linkedin.com/login" target="_blank"><i class="brand fa-brands fa-linkedin-in"></i></a></div>
+                <!-- github -->
+                <div class="anim"><a href="https://github.com/login" target="_blank"><i class="brand fa-brands fa-github"></i></a></div>
+                <!-- x -->
+                <div class="anim"><a href="https://x.com/" target="_blank"><i class="brand fa-brands fa-twitter"></i></a></div>
+                <!-- instagram -->
+                <div class="anim"><a href="https://www.instagram.com/" target="_blank"><i class="brand fa-brands fa-instagram"></i></a></div>
+                <!-- fb -->
+                <div class="anim"><a href="https://www.facebook.com/login/" target="_blank"><i class="brand fa-brands fa-facebook"></i></i></a></div>
+                <!-- email -->
+                <div class="anim"><a href="" target="_blank"><i class="brand fa-solid fa-envelope"></i></a></div>
+            </div>
+        </section>
+
+        <footer>
+            <div>
+                <p id="copy">&copy;POrtfolio Website- June 2024, All rights reserved to &reg; Ana Steel</p>
+            </div>
+            <div class="anim up-arrow">
+                <a href="#"><i class="fa-solid fa-angle-up"></i></a>
+            </div>
+        </footer>
     
     <div class="skills"></div>
     <div class="contact"></div>
